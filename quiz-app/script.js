@@ -88,7 +88,7 @@ function resetState(){
 
 function selectAnswer(e){
 	const selectedButton = e.target
-	const isCorrect = selectedButton.dataset.correct === true
+	const isCorrect = selectedButton.dataset.correct === "true"
 	if(isCorrect){
 		selectedButton.classList.add("correct")
         score++
