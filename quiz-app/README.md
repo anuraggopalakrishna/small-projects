@@ -23,5 +23,4 @@ Result Page
 
 
 ### To-Do:
-* Create a landing page
 * Add a score display while taking the quiz
