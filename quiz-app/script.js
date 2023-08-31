@@ -49,18 +49,32 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const startButton = document.getElementById("start-btn");
 
 let currQuestionIndex = 0
 let score = 0
 
-
 function startQuiz(){
-  currQuestionIndex = 0
-  score = 0
-  nextButton.innerHTML = "Next"
-  showQuestion()
+    questionElement.classList.add("hide");
+    answerButtons.classList.add("hide");
+    resetState();
+    startButton.classList.remove("hide");
+    startButton.addEventListener("click", startBtn);
+}   
+
+function startBtn() {
+    startButton.classList.add("hide");
+    prepQuestions();
 }
 
+function prepQuestions() {
+    currQuestionIndex = 0;
+    score = 0;
+    questionElement.classList.remove("hide");
+    answerButtons.classList.remove("hide");
+    nextButton.classList.remove("hide");
+    showQuestion();
+}
 function showQuestion(){
   resetState()
   let currQuestion = questions[currQuestionIndex]
@@ -80,6 +94,7 @@ function showQuestion(){
 }
 
 function resetState(){
+    nextButton.innerHTML = "Next";
 	nextButton.style.display = "none";
 	while(answerButtons.firstChild){
     answerButtons.removeChild(answerButtons.firstChild)

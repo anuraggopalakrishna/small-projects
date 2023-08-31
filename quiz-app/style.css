@@ -57,7 +57,7 @@ body{
     background: #ff9393;
     color: black;
 }
-#next-btn{
+.res-btn{
     background: rgba(243, 100, 49, 0.799);
     font: inherit;
     width: 100px;
@@ -71,7 +71,11 @@ body{
     transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out;
 }
 
-#next-btn:hover{
+.res-btn:hover{
     transform: scale(1.2);
     background-color: rgba(255, 127, 80, 0.725);
+}
+
+.hide{
+    display : none;
 }
