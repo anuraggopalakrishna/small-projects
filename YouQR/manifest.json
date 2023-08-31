@@ -1,10 +1,12 @@
 {
-  "manifest_version": 2,
-  "name": "YouQR",
-  "version": "1.0",
-  "description": "Generate QR code for the current website",
-  "permissions": ["activeTab"],
-  "browser_action": {
+  "manifest_version": 3,
+  "name": "YouQR - Instant QR Code",
+  "version": "0.1",
+  "description": "Generate QR code for the current active tab. Easily access your current tab on mobile.",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "icon-16.png",
