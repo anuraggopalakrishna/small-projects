@@ -9,6 +9,9 @@ Welcome to the Simple Frontend Quiz Website project! This project was made to pr
 
 ## Screenshots
 
+Start
+![Screenshot 0](screenshots/Screenshot_0.png)
+
 Initial State
 ![Screenshot 1](screenshots/Screenshot_1.png)
 
